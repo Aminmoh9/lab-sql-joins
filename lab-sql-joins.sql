@@ -91,7 +91,7 @@ SELECT f.title AS film_title,
 	   CASE 
           WHEN IFNULL(COUNT(i.inventory_id), 0) = 0 THEN 'NOT available'
           ELSE 'Available'
-	   END AS availbility_status
+	   END AS availability_status
 FROM 
     film f
 LEFT JOIN 
